@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Grill</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+<h1>🔥 Grill</h1>
+<p>أفضل أسياخ مشوية بطعم لا يُقاوم</p>
+</header>
+
+<section class="products">
+
+<div class="card" onclick="addItem('سيخ كفتة', 25)">
+<img src="https://images.unsplash.com/photo-1604908812583-6f0b9c1c0b6b" alt="كفتة">
+<h3>سيخ كفتة</h3>
+<p>25 جنيه</p>
+</div>
+
+<div class="card" onclick="addItem('سيخ كباب', 30)">
+<img src="https://images.unsplash.com/photo-1625944525903-dc8b8e8a4f3d" alt="كباب">
+<h3>سيخ كباب</h3>
+<p>30 جنيه</p>
+</div>
+
+<div class="card" onclick="addItem('سيخ شيش دجاج', 28)">
+<img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7" alt="شيش دجاج">
+<h3>سيخ شيش دجاج</h3>
+<p>28 جنيه</p>
+</div>
+
+<div class="card" onclick="addItem('سيخ لحمة مشوية', 35)">
+<img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1" alt="لحمة مشوية">
+<h3>سيخ لحمة مشوية</h3>
+<p>35 جنيه</p>
+</div>
+
+<div class="card" onclick="addItem('سيخ كفتة بالجبنة', 32)">
+<img src="https://images.unsplash.com/photo-1598514982841-2f9f4f7c1d0d" alt="كفتة بالجبنة">
+<h3>سيخ كفتة بالجبنة</h3>
+<p>32 جنيه</p>
+</div>
+
+<div class="card" onclick="addItem('سيخ كباب بالجبنة', 38)">
+<img src="https://images.unsplash.com/photo-1604908177522-4025f6e0d5c3" alt="كباب بالجبنة">
+<h3>سيخ كباب بالجبنة</h3>
+<p>38 جنيه</p>
+</div>
+
+</section>
+
+<section class="invoice-box">
+<h2>الفاتورة الحالية</h2>
+<ul id="invoiceList"></ul>
+<h3>الإجمالي: <span id="total">0</span> جنيه</h3>
+<button onclick="checkout()">إتمام الطلب</button>
+</section>
+
+<footer class="main-footer">
+<p>© 2026 Grill Restaurant - جميع الحقوق محفوظة</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
