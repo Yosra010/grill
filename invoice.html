@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الفاتورة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🧾 الفاتورة النهائية</h1>
+
+<ul id="finalList"></ul>
+<h2>الإجمالي النهائي: <span id="finalTotal"></span> جنيه</h2>
+
+<script>
+
+let items = JSON.parse(localStorage.getItem("invoiceItems"));
+let total = localStorage.getItem("invoiceTotal");
+
+let list = document.getElementById("finalList");
+
+items.forEach(item=>{
+let li = document.createElement("li");
+li.textContent = item.name + " - " + item.price + " جنيه";
+list.appendChild(li);
+});
+
+document.getElementById("finalTotal").textContent = total;
+
+</script>
+
+</body>
+</html>
